@@ -1,0 +1,1 @@
+\frameworks\cocos2d-x\tools\bindings-generator\targets\lua\conversions.yaml
