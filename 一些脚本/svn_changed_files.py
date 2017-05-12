@@ -9,10 +9,17 @@ import fnmatch
 import sys,shutil
 import platform
 import time
+import sys
 
-###################################
-svn_start_ver = "4104"
-svn_end_ver = "4234"
+print "---------------------------------------------------------------"
+vers = str(input("please input start and end version,format is 'start,end':\n"))
+vers = vers[1:-1]
+vers = vers.replace(" ", "")
+startVerEnd = vers.find(",")
+endVerstart = vers.find(",")+1
+svn_start_ver = vers[:startVerEnd]
+svn_end_ver = vers[endVerstart:]
+print "start getting all changes from version %s to %s,please wait" % (svn_start_ver, svn_end_ver)
 ###################################
 
 timeStr = time.strftime('[%y%m%d%H%M]',time.localtime(time.time()))
@@ -23,7 +30,7 @@ changeListFile = "./" + hotDir + "/changelist.txt"
 def genChangeList():
     #make folder
     if os.path.exists(hotDir):
-        os.rmdir(hotDir)
+        shutil.rmtree(hotDir)
     os.mkdir(hotDir)     
     
     #make changelist file
@@ -62,8 +69,11 @@ def moveFiles():
         newDir = fileTo[:fileTo.rfind("/")]
         if not os.path.exists(newDir):
             os.makedirs(newDir)
-        print "%s" % (fileFrom)
+        #print "%s" % (fileFrom)
         shutil.copyfile(fileFrom, fileTo)
 
 genChangeList()
 moveFiles()
+
+print "complete"
+os.system('pause')
