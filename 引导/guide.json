@@ -1,0 +1,3485 @@
+{
+   "guides" : [
+      {
+         "id" : 1,
+         "name" : "普通战斗引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_21" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导再次点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_1_1+T_Btn", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_1_1+T_Btn" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Attack_2", "任务引导点击普通难度" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Attack_2" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 2,
+         "name" : "穿佩饰引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_46" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnRole", "点击主公界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnRole" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+6", "点击佩饰图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+6" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 4,
+                  "stringValues" : [ "等待第二个格子刷新完毕,在继续下面的点击" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "EquipContainer+updateUnit+7" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+7", "点击佩饰图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+7" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back", "点击关闭" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 3,
+         "name" : "在线奖励领取引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公，汉献帝为了嘉奖您剿灭黄巾军，特派人送来奖赏，我们快去看看吧" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "打开活动界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_1+T_Btn_Reward+40", "点击领取奖励按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_1+T_Btn_Reward+40" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [
+                     "朝廷设置奖励，如等级礼包、七天登录礼包，只要达到目标，您可以随时领取。"
+                  ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 4,
+         "name" : "第一次招式学习",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_18" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSkills", "点击主界面中招式按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSkills" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_20" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_1", "点击冲刺攻击图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击冲刺攻击的学习按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_2", "点击技能旋风斩图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_2" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击旋风斩学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 5,
+         "name" : "铁匠铺装备强化与进阶",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEquip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEquip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Sthengthen_Auto", "点击自动强化按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Sthengthen_Auto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Upgrade", "点击进阶按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Upgrade" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_56" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_OrderAscendTips+T_Btn_Yes", "点击确定按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_OrderAscendTips+T_Btn_Yes" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 6,
+         "name" : "签到领取道具引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "点击福利按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+30", "点击福利按钮，签到" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+30" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 7,
+         "name" : "活动开启，引导等级礼包",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_45" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "点击福利按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+35", "点击活动，等级礼包栏" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+35" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_2+T_Btn_Reward+1", "点击领取奖励按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_2+T_Btn_Reward+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 8,
+         "name" : "七天礼包引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "点击福利按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+10", "点击七天礼包栏" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+10" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_3+T_Btn_Reward+1", "点击领取奖励按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_3+T_Btn_Reward+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 9,
+         "name" : "首充引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "首充" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+1", "首充栏" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 10,
+         "name" : "学习技能二",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_18" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSkills", "点击招式界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSkills" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_2_1", "点击技能下段斩" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_2_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_3_1", "点击技能滑地斩" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_3_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_4_1", "点击上段斩学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_4_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 11,
+         "name" : "第一次引导强化武将，将灵不足",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_36" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnHero", "点击武将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnHero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID", "点击武将图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto", "点击一键强化按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_37" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Panel_AscensionBtn+BtnDaliy+1", "点击出征按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Panel_AscensionBtn+BtnDaliy+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_1_4+T_Btn", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_1_4+T_Btn" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Attack_2", "点击出战按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Attack_2" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 12,
+         "name" : "将灵满足引导二次强化武将",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_38" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnHero", "点击武将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnHero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID", "点击武将图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto", "点击一键强化按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel", "关闭武将详细界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back", "关闭武将界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 13,
+         "name" : "酒馆招募贾诩",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_50" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnBar", "点击酒馆按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnBar" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "TavernUI_Recruit_New+T_Btn_Money_One", "点击元宝免费招募一次" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "TavernUI_Recruit_New+T_Btn_Money_One" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 3,
+                  "numValues" : [ 4.5 ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 3
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "TavernUIMain+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "TavernUIMain+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 14,
+         "name" : "武将突破",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnHero", "点击武将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnHero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 1 ],
+                  "stringValues" : [ "【武将突破】可以提升武将的品质，并能获得二阶属性，变的更厉害哦。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID", "点击武将图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_COIN_RECRUIT_HERO_ID" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_BreakThrough", "点击突破叶卡按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_BreakThrough" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_BreakThroughReq", "点击突破按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_BreakThroughReq" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesUI_BreackthroughSuccessUI+Bnt_Yes", "点击确认按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesUI_BreackthroughSuccessUI+Bnt_Yes" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel", "关闭武将详细界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back", "关闭武将界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 15,
+         "name" : "探索",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSearch", "点击探索" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSearch" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_54" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_Explore", "点击地图图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_Explore" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_Back", "点关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 16,
+         "name" : "学习技能四[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 1 ],
+                  "stringValues" : [ "主公你可以学习第四式：上段斩" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSkills", "点击招式界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSkills" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_4_1", "点击上段斩学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_4_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_Btn_Cancel", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_Btn_Cancel" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 17,
+         "name" : "修身",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress", "点击主界面美人按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Reward", "点击修身栏按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Reward" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [
+                     "EnchantressUI_Lingering+T_Btn_Add_Enchantress_1",
+                     "点击第一个美人头像"
+                  ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Lingering+T_Btn_Add_Enchantress_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 5
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 5,
+                  "stringValues" : [ "EnchantressUI_Lingering+AnimationListAppear" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Lingering+T_Btn_Enchantress+1", "点击美人头像" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Lingering+T_Btn_Enchantress+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Lingering+T_Btn_OK", "点击确定按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Lingering+T_Btn_OK" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [
+                     "主公，可根据需要调整产出的资源和时间。时间越长产出越多。同时必产【元宝】。"
+                  ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_TimeChoose+T_Btn_Commit", "点击另一个确定。" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_TimeChoose+T_Btn_Commit" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 18,
+         "name" : "竞技场",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "【竞技场】可获得积分排名，并可在荣誉商城内兑换变身的“幻化戒指”。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnPvp", "点击竞技场按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnPvp" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ArenaUI_Main+T_Btn_Challenge_5", "默认选择一个用户后开战" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ArenaUI_Main+T_Btn_Challenge_5" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 19,
+         "name" : "加入公会",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnGuild", "点击公会按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnGuild" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公您可以选择自己创建，也可以选择加入其他势力。" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "GuildUI_ApplyFor+T_Btn_Cancel", "点击关闭公会界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "GuildUI_ApplyFor+T_Btn_Cancel" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 20,
+         "name" : "炼化[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnRefining", "点击炼化按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnRefining" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RefiningUI+T_Btn_Question", "点击炼化说明按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RefiningUI+T_Btn_Question" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 21,
+         "name" : "宝物",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnTreasure", "点击宝物按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnTreasure" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Make_Money+T_Btn_Make_Auto", "点击一键炼宝" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Make_Money+T_Btn_Make_Auto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Make_Money+T_Btn_Pic_Auto", "点击一键拾取" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Make_Money+T_Btn_Pic_Auto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Main+T_Btn_Make_Treasury", "宝库" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Main+T_Btn_Make_Treasury" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Treasury+T_Btn_Devour", "点击一键吞噬" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Treasury+T_Btn_Devour" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Treasury+T_Btn_ItemBox+1", "点击第一个宝物" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Treasury+T_Btn_ItemBox+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Tips+T_Btn_Equip", "点击装备宝物" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Tips+T_Btn_Equip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "CimeliaUI_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "CimeliaUI_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 22,
+         "name" : "装备洗炼完整流程引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnRole", "点击主公界面" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnRole" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_48" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+15", "点击配饰图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+15" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Wash", "点击洗练按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Wash" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_49" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_Train+T_Btn_Transfer", "点击洗练按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_Train+T_Btn_Transfer" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 5
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 5,
+                  "stringValues" : [ "PackageUI_Train+ui_xilian" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_WashFinishTips+T_Btn_Yes", "点击确定按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_WashFinishTips+T_Btn_Yes" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "洗炼的属性，可花【元宝】恢复原来的属性值哦。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back", "点击关闭" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 23,
+         "name" : "装备镶嵌",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEquip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEquip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "装备镶嵌宝石能提升装备的属性哦，" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_RiseStar", "点击装备镶嵌按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_RiseStar" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EquipUI_Inlay+T_Btn_1", "点击宝石图标按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EquipUI_Inlay+T_Btn_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 24,
+         "name" : "英雄模式副本引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "引导点击任务图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_1_1+T_Btn_1", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_1_1+T_Btn_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_H_Btn_CheckSuggest", "任务引导点击英雄难度" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_H_Btn_CheckSuggest" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 25,
+         "name" : "美人召唤和缠绵引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress", "点击主界面美人按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_55" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Summon", "点击唤醒按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Summon" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 5
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 5,
+                  "stringValues" : [ "TipsRecruit+AnimationEnd" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "TipsRecruit_Hero+T_Panel_HeroProperty", "点击英雄头像" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "TipsRecruit_Hero+T_Panel_HeroProperty" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Set", "点击跟随按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Set" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Lingering", "点击缠绵按钮。" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Lingering" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 26,
+         "name" : "酒馆招募夏侯惇",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_32" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnBar", "点击酒按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnBar" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "TavernUI_Recruit_New+T_Btn_Coin_One", "点击铜币免费招募一次" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "TavernUI_Recruit_New+T_Btn_Coin_One" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 3,
+                  "numValues" : [ 4.5 ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 3
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "TavernUIMain+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "TavernUIMain+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 27,
+         "name" : "二次装备升级引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEquip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEquip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Sthengthen_Auto", "点击一键强化按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Sthengthen_Auto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "Equip_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 28,
+         "name" : "引导强化贾诩",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_53" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Hero", "点击武将TAB" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Hero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_MONEY_RECRUIT_HERO_ID", "点击武将图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn+FIRST_MONEY_RECRUIT_HERO_ID" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto", "点击一键强化按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_SkillUpAuto" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel", "关闭武将详细界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesInfoDetail+T_Btn_Cancel" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back", "关闭武将界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 29,
+         "name" : "二次缠绵和探索引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公寻来了思念之物，可以继续缠绵了哦。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress", "点击主界面美人按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnEnchantress" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Lingering", "点击缠绵按钮。" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Enchantress+T_Btn_Lingering" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EnchantressUI_Main+T_Btn_Back" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公，还要多多探索哦，也许有新的发现。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSearch", "点击探索" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSearch" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_IconExplore+1", "点击地图图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ExploreUIMain+T_Btn_IconExplore+1" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 30,
+         "name" : "引导夏侯惇上阵",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_33" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnHero", "点击主界面武将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnHero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_34" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Formation", "点击出战TAB" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Formation" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [
+                     "HeroesMainUI_New+T_Select+FIRST_COIN_RECRUIT_HERO_ID",
+                     "点击武将图标按钮"
+                  ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI_New+T_Select+FIRST_COIN_RECRUIT_HERO_ID" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back", "关闭武将界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 31,
+         "name" : "精英副本",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_58" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDungeons", "点击出征按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDungeons" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionMainUI+T_Btn_EliteDungeons", "点击精英副本" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionMainUI+T_Btn_EliteDungeons" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EliteDungeonsUI_Main+T_Btn_TurnUnit+1", "点击精英副本第一个" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EliteDungeonsUI_Main+T_Btn_TurnUnit+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EliteDungeonsUI_OPenUINew+T_Btn_Attack_2", "点击开始按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EliteDungeonsUI_OPenUINew+T_Btn_Attack_2" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 32,
+         "name" : "试练，攻城战长沙",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_57" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight", "点击界面试练按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_HeroKill", "点击攻城按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_HeroKill" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_CityAttack+T_Btn_Difficult_1", "点击攻城的不同难度按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_CityAttack+T_Btn_Difficult_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight", "点击开战按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 33,
+         "name" : "试练，斩将",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "挑战那些名将是不是特别有成就感呢？主公可以去试试噢。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight", "点击界面试练按" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_CityDefend", "点击斩将按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_CityDefend" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_HeroKill+T_Btn_Difficult_1", "点击斩将的不同难度按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_HeroKill+T_Btn_Difficult_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight", "点击开战按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 34,
+         "name" : "攻城略地",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "【攻城掠地】可获得铜币、镶嵌宝石和缠绵道具。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnTerritories", "点击攻城略地按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnTerritories" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_ToltalWar+T_Btn_Main", "点击城池图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_ToltalWar+T_Btn_Main" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_OpenUI+T_Btn_Fight", "点击开战按钮。" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_OpenUI+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 35,
+         "name" : "引导贾诩上阵",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_51" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnHero", "点击主界面武将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnHero" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Formation", "点击出战TAB" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI+T_Btn_Formation" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_52" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "HeroesMainUI_New+T_Btn_HeroFightUnit_21", "点击出战按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI_New+T_Btn_HeroFightUnit_21" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [
+                     "HeroesMainUI_New+T_Select+FIRST_MONEY_RECRUIT_HERO_ID",
+                     "点击武将图标按钮"
+                  ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "HeroesMainUI_New+T_Select+FIRST_MONEY_RECRUIT_HERO_ID" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 36,
+         "name" : "试练，杀敌救后主",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight", "点击界面试练按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_57" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_100Kill", "点击杀敌" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_100Kill" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_100Killer+T_Btn_Difficult_1", "点击杀敌的不同难度按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_100Killer+T_Btn_Difficult_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公，20级即可开放试练扫荡功能，VIP可免费获得扫荡券哦。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight", "点击开战按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 37,
+         "name" : "穿衣服[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_NewEquip+T_Btn_Equip+4", "点击快捷装备" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_NewEquip+T_Btn_Equip+4" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 38,
+         "name" : "技能升级[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 1 ],
+                  "stringValues" : [ "主公，你的技能该升级了，不然可打不过敌人了。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSkills", "点击招式界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSkills" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_1", "点击技能二段冲刺" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_2", "点击技能旋风斩" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_2" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "冲刺攻击与旋风斩是联合使用的，向左或右划屏三次即可触发 " ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 39,
+         "name" : "试练，守城引导平5路",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight", "点击界面试练按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDailyFight" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "【平五路】为守城玩法，可获得“强化石”，难度越高奖励越丰富！" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_CityAttack", "点击守城" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_Trial+T_Btn_CityAttack " ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_CityDefend+T_Btn_Difficult_1", "点击守城的不同难度按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_CityDefend+T_Btn_Difficult_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "主公，20级即可开放试练扫荡功能，VIP可免费获得扫荡券哦。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight", "点击开战按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_HeroChoose+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 40,
+         "name" : "神将录引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "【神将录】可收集武将神位，激活提升角色的加成属性。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnStyle", "点击主界面神将录按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnStyle" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "LayoutUi_Main+T_BtnOnlyHero_1", "点击无双神将按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "LayoutUi_Main+T_BtnOnlyHero_1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "LayoutUi_HeroChoose+T_Btn_Fight", "点击挑战按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "LayoutUi_HeroChoose+T_Btn_Fight" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 41,
+         "name" : "二次等级十礼包引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnFairy", "点击福利按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnFairy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+3", "点击活动，等级礼包栏" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+3" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_2+T_Btn_Reward+2", "点击领取奖励按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_CommonReward_2+T_Btn_Reward+2" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 42,
+         "name" : "二次穿佩饰引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_47" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnRole", "点击主公界面" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnRole" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+15", "点击佩饰图标按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "EquipContainer+ItemUnitUI_Accessory+15" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip", "点击装备按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI_EquipTips+T_Btn_Equip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back", "点击关闭" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleUI+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 43,
+         "name" : "火焰旋风斩技能学习",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnSkills", "点击招式" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnSkills" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_3", "点击火焰旋风斩按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkills+T_Btn_Skill_1_3" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy", "点击学习按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_BtnStudy" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_Btn_Cancel", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "RoleSkii_Tips+T_Btn_Cancel" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 44,
+         "name" : "扫荡引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导再次点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_1_4+T_Btn", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_1_4+T_Btn" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Clear", "任务引导点击扫荡难度" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Clear" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 45,
+         "name" : "每日任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnDailyMission", "引导点击每日任务按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnDailyMission" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "【日常任务】获得活跃度积分后可兑换宝箱，先试试第一个任务吧。" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DailyMission_Reward+T_Btn_Go+1", "引导点击每日任务中扫荡按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DailyMission_Reward+T_Btn_Go+1" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_4_19+T_Btn", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_4_19+T_Btn" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Clear", "引导扫荡1次" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionOpenUI+T_Btn_Clear" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 3,
+                  "numValues" : [ 1.5 ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 3
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "fightUI_SweepRoll+T_Btn_Cancel", "点击关闭" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "fightUI_SweepRoll+T_Btn_Cancel" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_59" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            }
+         ]
+      },
+      {
+         "id" : 46,
+         "name" : "领取星级宝箱引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "点击任务引导" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_35" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissionMainUI+T_Btn_Chest", "点击宝箱" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissionMainUI+T_Btn_Chest" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MissonUI_Chest_Tips+T_Btn_RewardAll", "点击全部领取" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MissonUI_Chest_Tips+T_Btn_RewardAll" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DungeonMap_1_3+T_Btn", "任务引导点击大地图副本按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "DungeonMap_1_3+T_Btn" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 99,
+         "name" : "通用的快速换装引导[未启用]",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 1 ],
+                  "stringValues" : [ "主公，有新的物品可以装备！" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_NewEquip+T_Btn_Equip", "点击快捷装备" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_NewEquip+T_Btn_Equip" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "在后面的讨伐过程中，还会缴获更多的神兵利器，主公要记得及时佩戴" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            }
+         ]
+      },
+      {
+         "id" : 100,
+         "name" : "交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 101,
+         "name" : "学习技能三,之前的交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 102,
+         "name" : "探索,前的交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 103,
+         "name" : "学习技能四,之前的交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 104,
+         "name" : "英雄模式副本引导,之前的交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 105,
+         "name" : "修身引导之前的强制交任务",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 106,
+         "name" : "战斗引导,之前的任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 1 ],
+                  "stringValues" : [ "主公，我们接到了紧急讨伐任务，快随我查看！" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 107,
+         "name" : "2次探索,前的交任务引导",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 110,
+         "name" : "第一个接任务引导，带语音",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_19" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 111,
+         "name" : "第一个交任务引导，带语音",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 6,
+                  "stringValues" : [ "jq_28" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 6
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnMissionGuide", "任务引导点击NPC" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_FOCUS_COMPLETE" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "DialogueUI+T_DialogContent", "任务引导点击任务面板" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 4,
+                  "stringValues" : [ "SL_GAME_EVENT_UNFOCUS_COMPLETE" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 47,
+         "name" : "引导VIP礼包界面【未启用】",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+T_Panel_VIP", "点击VIP界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+T_Panel_VIP" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene_RechargeVIP+Btn_TopUp", "点击特权按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene_RechargeVIP+Btn_TopUp" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "VIP可以让你在游戏中体验人生巅峰，并能领取超划算礼包！！！" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            }
+         ]
+      },
+      {
+         "id" : 48,
+         "name" : "引导基金但不购买",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnActivity", "点击活动按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnActivity" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+101", "点击基金tips" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Choose+101" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "一次购买享受7天回报。超值基金，心动不如行动！" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back", "点击关闭按钮" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "ActivityUi_Main+T_Btn_Back" ]
+               }
+            }
+         ]
+      },
+      {
+         "id" : 49,
+         "name" : "引导提示如果使用体力丹",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnRole", "点击主公界面" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnRole" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "PackageUI+T_btnProp", "点击物品按钮" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "PackageUI+T_btnProp" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [
+                     "【物品栏】放置获得的道具，其中“体力丹”可直接使用增加体力。（图标为六边形盒子上有一颗丹药。如没有说明已使用或没领取“七天登录礼包”。）"
+                  ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            }
+         ]
+      },
+      {
+         "id" : 50,
+         "name" : "引导星灵但不购买",
+         "steps" : [
+            {
+               "command" : {
+                  "guideCommand" : 1,
+                  "stringValues" : [ "MainScene+btnElves", "点击星灵图标" ]
+               },
+               "complete" : false,
+               "completeCondition" : {
+                  "guideCondition" : 1,
+                  "stringValues" : [ "MainScene+btnElves" ]
+               }
+            },
+            {
+               "command" : {
+                  "guideCommand" : 2,
+                  "numValues" : [ 2 ],
+                  "stringValues" : [ "激活星灵，即可获得附加属性，100%提升战斗力！" ]
+               },
+               "complete" : true,
+               "completeCondition" : {
+                  "guideCondition" : 2
+               }
+            }
+         ]
+      }
+   ]
+}
