@@ -1,0 +1,20 @@
+lua-cjson放入\frameworks\runtime-src\Classes\
+
+安卓接入：
+Android.mk加入这两堆，ios和windows类似
+
+[1]
+LOCAL_SRC_FILES := \
+../../Classes/lua-cjson/fpconv.c \
+../../Classes/lua-cjson/fpconv.h \
+../../Classes/lua-cjson/lua_cjson.c \
+../../Classes/lua-cjson/strbuf.c \
+../../Classes/lua-cjson/strbuf.h \
+
+
+[2]
+LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../Classes/lua-cjson \
+
+
+
