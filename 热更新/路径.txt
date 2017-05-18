@@ -1,3 +1,8 @@
-\frameworks\cocos2d-x\external\unzip
+包含热更新+解压缩本地zip(zip可以有密码)
 
+路径：
+\frameworks\cocos2d-x\external\unzip
 \frameworks\cocos2d-x\extensions\assets-manager
+
+生成zip的脚本：
+见脚本\gen_unzip.py
