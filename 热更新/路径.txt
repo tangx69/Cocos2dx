@@ -1,0 +1,3 @@
+\frameworks\cocos2d-x\external\unzip
+
+\frameworks\cocos2d-x\extensions\assets-manager
