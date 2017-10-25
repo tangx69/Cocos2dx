@@ -1,0 +1,24 @@
+1. 要给运营提供appid,开通各种支付方式
+2. 支付需要先充值"安智币",再去游戏里买
+
+http://bbs.zhiyoo.com/forum.php?mod=viewthread&tid=9525810&extra=page=1&page=1
+问题1、下拉任务栏进入任意界面弹框不消失：
+方案一：修改value 目录下anzhi_styles.xml 文件中的以下标签，在此标签加入标红的语句：
+<style name="mydialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/now</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+方案二：直接替换附件提供的文件。
+
+问题2、按home键回到桌面，通过图标回到游戏弹框不出现的解决方案：
+修改入口activity的mianfest配置：去掉 android:launchMode="singleTask"，或其他的启动模式配置。
+ps：如果修改本条会引起其他问题可以不修改。
+
+ps:问题1易接的插件里已经改过了,只需要处理问题2
+安智特殊处理,其他渠道不要这样改以免引起其他问题.

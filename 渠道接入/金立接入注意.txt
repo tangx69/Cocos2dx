@@ -1,0 +1,6 @@
+手机里面测试.按home键.然后按菜单键调出后台程序列表.点游戏再次进入会黑屏,解决办法:
+AndroidManifest.xml里面所有activity加上下面的属性
+android:configChanges="orientation|keyboardHidden|screenSize"
+
+具体可以参考斗战三国的yiie项目的AndroidManifest.xml
+xxx\trunk\client\core\frameworks\runtime-src\proj.android_yijie

@@ -1,0 +1,5 @@
+删除
+C:\Users\Administrator\AppData\Roaming\yijie\sdks\步步高{5EFCB428-547E62B1}(1.1.5)\res\resource_normal\lib
+文件夹下除了armeabi之外的所有文件.
+否则在手机上无法运行!
+(注意版本号1.1.5可能会变)

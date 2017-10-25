@@ -1,0 +1,5 @@
+拇指玩,易接接入注意:
+在易接sdk配置中的,自定义字段meta-data中,需要添加一条数据
+key:  DEBUG
+value: false
+否则在上传包的时候会报错"请将android:name="DEBUG"值设置为android:value="false" />, 否则会影响礼包

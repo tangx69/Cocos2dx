@@ -1,0 +1,3 @@
+易接sdk参数配置的地方有sdk版本可以选
+从这个网址下载sdk看是什么版本的.在易接上选择一样的版本.
+http://cmessage.coolyun.com/game-sdk.rar
