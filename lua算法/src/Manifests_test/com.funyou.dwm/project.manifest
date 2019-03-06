@@ -1,0 +1,16 @@
+{
+	"packageUrl" : "http://gjlogin.hzfunyou.com/dmw/patches/vtest_ios/",
+	"remoteManifestUrl" : "http://gjlogin.hzfunyou.com/dmw/manifests/com.funyou.dwm.test/project.manifest",
+	"remoteVersionUrl" : "http://gjlogin.hzfunyou.com/dmw/manifests/com.funyou.dwm.test/version.manifest",
+	"version" : "0.0.20",
+	"engineVersion" : "3.4",
+
+	"assets" : 
+	{
+	
+	},
+    
+    "searchPaths" : [
+
+    ]
+}

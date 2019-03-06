@@ -1,0 +1,16 @@
+{
+	"packageUrl" : "http://115.159.66.225/dmw/patches/v0001/",
+	"remoteManifestUrl" : "http://115.159.66.225/dmw/manifests/android/com.funyou.gjsg.yq/project.manifest",
+	"remoteVersionUrl" : "http://115.159.66.225/dmw/manifests/android/com.funyou.gjsg.yq/version.manifest",
+	"version" : "0.0.1",
+	"engineVersion" : "3.4",
+
+	"assets" : 
+	{
+	
+	},
+    
+    "searchPaths" : [
+
+    ]
+}

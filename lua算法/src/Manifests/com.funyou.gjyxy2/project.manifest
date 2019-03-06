@@ -1,0 +1,16 @@
+{
+	"packageUrl" : "http://gjlogin.hzfunyou.com/dmw/patches/v0001/",
+	"remoteManifestUrl" : "http://gjlogin.hzfunyou.com/dmw/manifests/com.funyou.gjyxy2/project.manifest",
+	"remoteVersionUrl" : "http://gjlogin.hzfunyou.com/dmw/manifests/com.funyou.gjyxy2/version.manifest",
+	"version" : "0.2.0",
+	"engineVersion" : "3.4",
+
+	"assets" : 
+	{
+	
+	},
+    
+    "searchPaths" : [
+
+    ]
+}
