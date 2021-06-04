@@ -1,1 +1,0 @@
-load "mod/baseobj/baseobj"
